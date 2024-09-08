@@ -23,7 +23,7 @@ import Image from "next/image";
 export default function SideBar() {
 	return (
 		<>
-			<aside className='lg:hidden flex flex-col items-center'>
+			<aside className='lg:hidden flex flex-col items-center border-r px-1'>
 				<SmallSidebarItem Icon={HomeIcon} url={"#"} title={"Home"} />
 				<SmallSidebarItem Icon={Repeat} url={"#"} title={"Shorts"} />
 				<SmallSidebarItem
@@ -34,7 +34,7 @@ export default function SideBar() {
 				<SmallSidebarItem Icon={Library} url={"#"} title={"You"} />
 			</aside>
 
-			<aside className='w-56 lg:sticky top-0 overflow-y-auto scrollbar-hidden hidden lg:flex flex-col'>
+			<aside className='w-56 lg:sticky top-0 overflow-y-auto hidden lg:flex flex-col scrollbar'>
 				<LargeItemsSection>
 					<LargeSidebarItem url={"/"} title={"Home"} Icon={HomeIcon} />
 					<LargeSidebarItem

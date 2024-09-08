@@ -15,15 +15,17 @@
     "mongoose": "^8.0.3",
     "next": "^14.0.4",
     "next-auth": "^4.24.5",
+    "next-themes": "^0.3.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.10"
   },
   "devDependencies": {
+    "@types/node": "22.5.4",
     "@types/react": "18.2.45",
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "^14.0.4",
-    "postcss": "^8",
-    "tailwindcss": "^3"
+    "postcss": "^8"
   }
 }

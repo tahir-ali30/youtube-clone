@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.youtube-items-renderer {
-  @apply flex flex-col gap-3 border-b-2 py-4;
-}
-
-.youtube-items-renderer a{
-  @apply p-2;
-}
-.youtube-items-renderer a:hover{
-  @apply bg-white/10 rounded-md;
+.scrollbar {
+	&::-webkit-scrollbar {
+		@apply hidden;
+	}
+	&::-webkit-scrollbar-thumb {
+		@apply bg-blue-300 rounded-full;
+	}
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { categories } from "../app/data/home";
@@ -44,7 +45,7 @@ export default function CategoryPills() {
 						<button
 							onClick={() => setSelectedCategory(category)}
 							key={category}
-							className={`p-2 border border-black text-sm rounded-lg font-medium hover:bg-slate-200 ${
+							className={`p-2 border border-black dark:border-white text-sm rounded-lg font-medium hover:bg-slate-200 dark:hover:bg-slate-200/30 ${
 								selectedCategory === category ? "bg-slate-500/50" : "bg-none"
 							}`}
 						>
@@ -55,7 +56,7 @@ export default function CategoryPills() {
 			</div>
 
 			{isLeftVisible && (
-				<div className='absolute left-0 top-0 bg-gradient-to-r from-white from-50% to-transparent w-24 h-full'>
+				<div className='absolute left-0 top-0 bg-gradient-to-r from-white dark:from-black from-50% to-transparent w-24 h-full'>
 					<button
 						className='h-10 aspect-square w-10 p-1.5 hover:bg-slate-400/40 rounded-full'
 						onClick={() =>
@@ -72,7 +73,7 @@ export default function CategoryPills() {
 			)}
 
 			{isRightVisible && (
-				<div className='absolute right-0 top-0 bg-gradient-to-l from-white from-50% to-transparent w-24 h-full flex justify-end'>
+				<div className='absolute right-0 top-0 bg-gradient-to-l from-white dark:from-black from-50% to-transparent w-24 h-full flex justify-end'>
 					<button
 						className='h-10 aspect-square w-10 p-1.5 hover:bg-slate-400/40 rounded-full flex justify-center'
 						onClick={() =>
